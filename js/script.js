@@ -107,3 +107,24 @@ function fakeBin(x) {
 function reverseWords(str) {
   return output = str.split(' ').map(x => x.split('').reverse().join('')).join(' ')
 }
+// sum of specific series
+const SeriesSum = n => {
+  let sum = 1
+  if(n<=1){
+    return n.toFixed(2).toString()
+  }else{
+    for(i=1;i<n;i++){
+      sum += 1/(1+(i*3))
+      }
+    return sum.toFixed(2).toString()
+}
+}
+// Difference of arrays
+function arrayDiff(a, b) {{ 
+    
+  return a.filter(function(ele){ 
+      return !(b.includes(ele)); 
+  });
+}
+
+}
