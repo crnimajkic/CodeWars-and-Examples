@@ -248,3 +248,25 @@ const arraysSum = suminternal(arrays).reduce((acc, e) => acc + e, 0)
 // TODO: compute the value of the arraysSum variable
 
 console.log(arraysSum); // Should show 31
+
+// square every digit
+function squareDigits(num){
+  let simo = num.toString().split('').map(e=>e**2).join('')
+  return parseInt(simo);
+}
+
+// order the words in string
+function order(words) {
+  let ordered = []
+  if (words === []) {
+      return []
+  } else {
+      let splited = words.split(' ')
+      for (let i = 1; i <= splited.length; i++) {
+          ordered.push(splited.filter(x => x.includes(i)))
+      }
+  }
+  return ordered.join(' ')
+}
+
+
