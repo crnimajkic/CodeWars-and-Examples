@@ -308,3 +308,7 @@ var greet_ben = function() {
   name = 'Ben'
   return "Hello, " + name + '!';
 };
+//min max from array
+function minMax(arr){
+  return [Math.min(...arr), Math.max(...arr)];
+}
