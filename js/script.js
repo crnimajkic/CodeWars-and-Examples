@@ -268,5 +268,43 @@ function order(words) {
   }
   return ordered.join(' ')
 }
+// arrays
+function simpleMultiplication(number) {
+  let m = number%2===0? number*8:number*9
+return m// your code........
+}
 
+// binary to number
+const binaryArrayToNumber = arr => {
+  let str = arr.join('')// your code
+  return parseInt(str,2)
+};
 
+//remove minimum
+function removeSmallest(numbers) {
+  let brojevi=[]
+  for(let i = 0 ; i <numbers.length;i++){
+    brojevi.push(numbers[i])
+  }
+
+  let minimum = Math.min(...numbers);
+  let index = numbers.indexOf(minimum)
+  brojevi.splice(index,1)
+  return brojevi 
+}
+
+// centry from year
+function century(year) {
+  // Finish this :)
+  return Math.ceil(year/100);
+}
+
+// shifty closures
+let name = 'Abe';
+var greet_abe = function() {
+  return "Hello, " + name + '!';
+};
+var greet_ben = function() {
+  name = 'Ben'
+  return "Hello, " + name + '!';
+};
