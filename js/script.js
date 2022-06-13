@@ -312,3 +312,15 @@ var greet_ben = function() {
 function minMax(arr){
   return [Math.min(...arr), Math.max(...arr)];
 }
+// check if sqrt 
+function isSquare(n) {
+  return Math.sqrt(n) % 1 === 0;
+}
+// paperwork copying
+function paperwork(n, m) {
+  if(n<=0||m<=0){
+    return 0
+  }else {
+    return n*m
+  }
+ }
