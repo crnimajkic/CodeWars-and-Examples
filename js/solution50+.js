@@ -48,3 +48,57 @@ function bouncingBall(h, bounce, window) {
     return -1
   }
 }
+
+// sorting odds in array
+function sortArray(array) {
+
+  let oddNumsInArray = array.filter(x => x % 2 == 1 || x % 2 === -1)
+  oddNumsInArray.sort(function (a, b) { return a - b })
+  let count = 0
+
+  let newArray = array.map(x => {
+    if (x % 2 === 1 || x % 2 === -1) {
+      x = oddNumsInArray[count]
+      count = count + 1
+      return x
+    } else { return x }
+  })
+  return newArray
+}
+
+// likes meme
+
+function likes(names) {
+  return names.length === 0 ? "no one likes this" : names.length === 1 ? `${names[0]} likes this` : names.length === 2 ? `${names[0]} and ${names[1]} like this` : names.length === 3 ? `${names[0]}, ${names[1]} and ${names[2]} like this` : `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
+}
+
+// uppercase 
+
+const makeUpperCase = str => str.toUpperCase();
+
+//  string manipulation
+function areYouPlayingBanjo(name) {
+  if (name[0].toLowerCase() === "r") {
+    return `${name} plays banjo`
+  } else return `${name} does not play banjo`
+}
+// filter !
+function removeExclamationMarks(s) {
+  let filtered = s.split('').filter(x => x != "!")
+  return filtered.join("")
+}
+//
+
+function stray(numbers) {
+
+  let filtered = numbers.filter((x, i) => {
+    if (i = 0) {
+      if(x!==numbers[1]){
+        return x
+      }
+   } else if (x !== numbers[i - 1]) {
+      return x
+    }
+  })
+  return filtered[0]
+}
