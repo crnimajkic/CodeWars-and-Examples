@@ -324,3 +324,21 @@ function paperwork(n, m) {
     return n*m
   }
  }
+ function stray(numbers) {
+
+  let filtered = numbers.filter((x, i) => {
+    if (i === 0) {
+      if(!(x===numbers[i+1])&&!(x===numbers[i+2])){
+        return x
+      }
+   } else if(i === numbers.length-1) {
+     if((!(x===numbers[i-1])&&!(x===numbers[i-2])))
+      return x
+    }else{
+      if(!(x===numbers[i+1])&&!(x===numbers[i-1])){
+        return x
+      }
+    }
+  })
+  return filtered[0]=== undefined? 0 : filtered[0]
+}
