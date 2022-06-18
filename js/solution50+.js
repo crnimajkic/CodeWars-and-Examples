@@ -48,6 +48,19 @@ function bouncingBall(h, bounce, window) {
     return -1
   }
 }
+// XOR
+function xor(a, b) {
+  if(a===true&&b===false||a===false&&b===true){
+    return true
+  }else{
+    return false
+  }
+}
+
+// hourmin sec
+function past(h, m, s){
+  return (h*60*60*1000)+(m*60*1000)+(s*1000)//#Happy Coding! ^_^
+ }
 
 // sorting odds in array
 function sortArray(array) {
@@ -101,4 +114,10 @@ function stray(numbers) {
     }
   })
   return filtered[0]
+}
+// returnig high and low from string of nums
+
+function highAndLow(numbers){
+  let arrnum = numbers.split(" ")
+  return `${Math.max(...arrnum)} ${Math.min(...arrnum)}`
 }
