@@ -121,3 +121,90 @@ function highAndLow(numbers){
   let arrnum = numbers.split(" ")
   return `${Math.max(...arrnum)} ${Math.min(...arrnum)}`
 }
+
+function alphabetPosition(text) {
+  return text.toLowerCase().split('').map(x =>{
+    let y
+    switch(x){
+      case "a":
+        y = 1
+        break
+        case "b":
+        y = 2
+        break
+        case "c":
+        y = 3
+        break
+        case "d":
+        y = 4
+        break
+        case "e":
+        y = 5
+        break
+        case "f":
+        y = 6
+        break
+        case "g":
+        y = 7
+        break
+        case "h":
+        y = 8
+        break
+        case "i":
+        y = 9
+        break
+        case "j":
+        y = 10
+        break
+        case "k":
+        y = 11
+        break
+        case "l":
+        y = 12
+        break
+        case "m":
+        y = 13
+        break
+        case "n":
+        y = 14
+        break
+        case "o":
+        y = 15
+        break
+        case "p":
+        y = 16
+        break
+        case "q":
+        y = 17
+        break
+        case "r":
+        y = 18
+        break
+        case "s":
+        y = 19
+        break
+        case "t":
+        y = 20
+        break
+        case "u":
+        y = 21
+        break
+        case "v":
+        y = 22
+        break
+        case "w":
+        y = 23
+        break
+        case "x":
+        y = 24
+        break
+        case "y":
+        y = 25
+        break
+        case "z":
+        y = 26
+        break
+    }
+  return y
+  }).filter(x => x).join(" ")
+}
