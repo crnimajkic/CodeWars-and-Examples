@@ -342,3 +342,8 @@ function paperwork(n, m) {
   })
   return filtered[0]=== undefined? 0 : filtered[0]
 }
+
+/// added 
+function solution(str){
+  return str.split('').reverse().join('')
+}
