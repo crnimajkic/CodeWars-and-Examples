@@ -347,3 +347,12 @@ function paperwork(n, m) {
 function solution(str){
   return str.split('').reverse().join('')
 }
+
+//counting by X
+function countBy(x, n) {
+  let z = [];
+  for (let i = 1;i<=n;i++){
+    z.push(x*i)
+  }
+  return z;
+}
