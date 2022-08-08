@@ -356,3 +356,14 @@ function countBy(x, n) {
   }
   return z;
 }
+/// differatiating greeting
+function hello(name) {
+  if(name==''|| name == undefined){
+    return "Hello, World!"
+  }else{
+     let  nameending = name.substring(1).toLowerCase()
+  let namebegining = name[0].toUpperCase()
+  name = namebegining+nameending
+  }
+  return `Hello, ${name}!`
+}
