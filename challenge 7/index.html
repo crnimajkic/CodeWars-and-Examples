@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 7 Challenge Starter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="content">
+        <div class="meme">
+          <h2>Programming meme</h2>
+          <img src="" alt="" class="meme-img">
+        </div>
+        <div class="joke">
+          <h2>Programming joke</h2>
+          <p class="joke-parag"></p>
+        </div>
+        <div class="quote">
+          <h2>''Quote</h2>
+          <p class="quote-parag"></p>
+          <p class="quote-author"></p>
+        </div>
+          
+        <div class="riddle">
+          <h2>New riddle</h2>
+          <p class="riddle-parag"></p>
+          <p class="riddle-answer"></p>
+
+        </div>
+      </section>
+
+      <section class="sidebar">
+        <h2>Actions</h2>
+        <button onclick="showMeme()">Show a Meme</button>
+        <button onclick="showJoke()">Tell Me a Joke</button>
+        <button onclick="showQuote()">Random Quote</button>
+        <button onclick="showRiddle()">Riddle me</button>
+        <button class="reveal-btn" onclick="revealAnswers()">
+          Reveal Riddle Answer
+        </button>
+        <button onclick="clearAll()" class="clearAll">Clear All</button>
+        <p class="attribution">
+          Code challenge by
+          <a href="https://www.twitter.com/zg_dev" target="_top">@zg_dev</a>
+        </p>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
