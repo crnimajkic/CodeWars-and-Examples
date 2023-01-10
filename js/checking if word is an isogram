@@ -1,0 +1,15 @@
+function isIsogram(str){
+  let lowercase = str.toLowerCase().split('')
+  console.log(lowercase)
+  let isogram = []
+  for (let i = 0;i<= lowercase.length -1;i++){
+    
+        
+      if(isogram.includes(lowercase[i])){
+         return false
+         }else{
+        isogram.push(lowercase[i])
+      }
+  }
+  
+  
